@@ -7,17 +7,17 @@ import java.io.FileWriter;
 
 public class HomeWorkTwo {
     public static void main(String[] args) {
-        //Palindrome();
-        //TestInFile();
+        //palindrome();
+        //testInFile();
         String path = "C:\\Users\\Anika\\Desktop\\lessonjava\\untitled\\src\\main\\java\\lesson2\\homework";
-        FileExtension(path);
+        fileExtension(path);
     }
 
     /**
      * Задача 1.Напишите метод, который принимает на вход строку (String) и определяет является ли строка
      * палиндромом (возвращает boolean значение).
      */
-    public static void Palindrome() {
+    public static void palindrome() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите строку: ");
         String s = scanner.nextLine().replaceAll("\\p{Punct}|\\p{Space}", "").toLowerCase();
@@ -39,7 +39,7 @@ public class HomeWorkTwo {
      * Задача 2. Напишите метод, который составит строку, состоящую из 100 повторений слова TEST и метод,
      * который запишет эту строку в простой текстовый файл, обработайте исключения.
      */
-    public static void TestInFile() {
+    public static void testInFile() {
 
         try (FileWriter fw = new FileWriter("C:\\Users\\Anika\\Desktop\\lessonjava\\untitled\\src\\main\\" +
                 "java\\resources\\file.txt", true)) {
@@ -63,7 +63,7 @@ public class HomeWorkTwo {
      * 3 Расширение файла:
      * 4 Расширение файла: jpg
      */
-    public static void FileExtension(String path) {
+    public static void fileExtension(String path) {
         File[] files = new File(path).listFiles();
         if (files != null) {
             for (File file : files) {
