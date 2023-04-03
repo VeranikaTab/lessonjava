@@ -1,0 +1,6 @@
+.idea
+lesson1
+lesson2
+main.iml
+out
+resources
